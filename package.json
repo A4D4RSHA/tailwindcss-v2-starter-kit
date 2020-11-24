@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-v2-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tailwindcss build src/style.css -o style.css",
+    "prod": "cross-env NODE_ENV=production tailwindcss build src/style.css -o style.css",
+    "watch": "nodemon -e css -x yarn dev -i ./style.css",
+    "serve": "yarn watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.6",
+    "postcss": "^8.1.10",
+    "tailwindcss": "^2.0.1"
+  }
+}
